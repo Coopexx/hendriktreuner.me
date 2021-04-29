@@ -32,7 +32,16 @@ const calcTime = function () {
   setTime(hour, min, half);
 };
 
+const getQuote = async function () {
+  const api_url = "https://stoic-quotes.com/api/quote";
+  const response = await fetch(api_url);
+  const data = await response.json();
+  document.querySelector(".main__quote").textContent = '" ' + data.text + ' "';
+  document.querySelector(".main__author").textContent = "- " + data.author;
+};
+
 window.addEventListener("load", function () {
   calcTime();
   setInterval(calcTime, 60000);
+  getQuote();
 });
