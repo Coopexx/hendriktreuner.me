@@ -137,6 +137,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; }
+    .header__navigation-svg {
+      height: 4rem;
+      fill: black; }
 
 .footer {
   display: flex;
