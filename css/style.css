@@ -91,59 +91,59 @@ body {
     fill: white; }
 
 .header {
-  z-index: 1;
+  width: 100%;
   height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, #09efe8, #058d88); }
-  .header__heading-container {
+  overflow: hidden; }
+  .header__background--image {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/photoOfMe.jpg);
+    background-size: cover;
+    background-position: 50% 40%; }
+  .header__background--overlay {
+    box-shadow: inset 0 0 0 2000px rgba(5, 141, 136, 0.5);
+    filter: blur(5px);
+    transform: scale(1.1); }
+  .header__heading {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%; }
-  .header__heading-text {
-    color: #fff;
-    font-size: 9rem;
-    padding-right: 2rem; }
-  .header__heading-image {
-    height: 25rem;
-    padding-left: 2rem; }
-  .header__navigation-container {
+    .header__heading-text {
+      color: #fff;
+      font-size: 9rem;
+      padding-right: 2rem; }
+    .header__heading-logo {
+      height: 25rem;
+      padding-left: 2rem; }
+  .header__navigation {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-  .header__navigation-item {
-    width: 8rem;
-    height: 5rem;
-    margin: 0 3rem;
-    background-color: white;
-    border-radius: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .header__navigation-icon {
-    height: 60%; }
-
-.header__background {
-  position: absolute;
-  border: 2px solid red;
-  width: 100%;
-  height: 100%;
-  font-size: 3rem;
-  overflow-wrap: break-word;
-  z-index: -10;
-  overflow: hidden; }
+    .header__navigation-item {
+      width: 8rem;
+      height: 5rem;
+      margin: 0 3rem;
+      background-color: white;
+      border-radius: 20rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
-  background-color: #bdc3c7; }
+  background-color: #fff; }
   .footer__credits-1 {
     display: inline; }
   .footer__credits-2 {
@@ -156,12 +156,11 @@ body {
     text-decoration: none; }
 
 .legal-disclosure {
-  padding: 10rem;
   min-height: 100vh;
-  background-image: linear-gradient(#09efe8, #058d88);
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   .legal-disclosure--content {
     width: 80%;
     padding: 5% 10%;
