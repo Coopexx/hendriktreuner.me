@@ -84,7 +84,7 @@ body {
     justify-content: center;
     transition: all 0.1s; }
   .bookmarks__item:hover {
-    box-shadow: 0.1rem 0.2rem 0.3rem #fff;
+    box-shadow: 0 0 1rem #fff;
     transform: translateY(-0.2rem); }
   .bookmarks__image {
     height: 5rem;
