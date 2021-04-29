@@ -8,5 +8,5 @@ Repository for the website hendriktreuner.com
 - YouTube (Link)
 - Portfolio
 
-### To Do
+## To Do
 - Dynamic page content
