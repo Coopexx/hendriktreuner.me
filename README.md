@@ -11,3 +11,4 @@ Repository for the website hendriktreuner.com
 ## To Do
 - Dynamic page content
 - Resize images
+- Project pages
