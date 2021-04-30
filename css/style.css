@@ -99,6 +99,13 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden; }
+  .header__background--image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    pointer-events: none; }
   .header__background--image {
     position: absolute;
     z-index: -1;
@@ -106,11 +113,8 @@ body {
     height: 100%;
     background-image: url(/images/photoOfMe.jpg);
     background-size: cover;
-    background-position: 50% 40%; }
-  .header__background--overlay {
-    box-shadow: inset 0 0 0 2000px rgba(5, 141, 136, 0.5);
-    filter: blur(5px);
-    transform: scale(1.1); }
+    background-position: 50% 40%;
+    box-shadow: inset 0 0 0 2000px rgba(5, 141, 136, 0.5); }
   .header__heading {
     display: flex;
     justify-content: center;
@@ -171,3 +175,37 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+
+.project {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .project__item {
+    width: 10rem;
+    height: 5rem;
+    background-color: red; }
+  .project__background-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    pointer-events: none; }
+  .project__background-image {
+    background: url("/images/background-image-portfolio.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(128, 128, 128, 0.2);
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
+
+.resume {
+  width: 100%;
+  height: 75vh;
+  background-color: red; }
