@@ -4,59 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="canonical" href="https://hendriktreuner.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script/index.js" defer></script>
     <title>Home</title>
   </head>
   <body>
-    <main class="header">
-        <div class="header__background--image"></div>
-        <span class="header__heading">
-          <h1 class="header__heading-text">Hi, I'm</h1>
-          <img
-            class="header__heading-logo"
-            src="/images/logo-white.svg"
-          />
-        </span>
-        <nav class="header__navigation">
-          <a class="header__navigation-item" href="blog.html">
-            <svg class="header__navigation-svg">
-              <use href="images/sprite.svg#icon-pencil2"></use>
-            </svg> 
-          </a> 
-          <a class="header__navigation-item" href="https://open.spotify.com/user/6uec1dydqeit5gepkr50pg18m?si=NbFT5Yo5TL23pD5TmF6QjA">
-            <svg class="header__navigation-svg">
-              <use href="images/sprite.svg#icon-spotify"></use>
-            </svg> 
-          </a> 
-          <a class="header__navigation-item" href="https://github.com/Coopexx">
-            <svg class="header__navigation-svg">
-              <use href="images/sprite.svg#icon-github"></use>
-            </svg> 
-          </a> 
-          <a class="header__navigation-item" href="https://www.youtube.com/channel/UCMUSMp2QcqGqKVNKgVpaVvA">
-            <svg class="header__navigation-svg">
-              <use href="images/sprite.svg#icon-youtube1"></use>
-            </svg> 
-          </a> 
-          <a class="header__navigation-item" href="portfolio.html">
-            <svg class="header__navigation-svg">
-              <use href="images/sprite.svg#icon-briefcase"></use>
-            </svg> 
-          </a> 
-        </nav>
-    </main>
-    <footer class="footer">
-      <span>
-        <p class="footer__credits-1">Built with <div class="footer__heart">❤</div>  in beautiful Berlin, Germany. </p>
-        <p class="footer__credits-2"> © 2021 by Hendrik Treuner. </p>
-        <a class="footer__legal-disclosure" href="legal-disclosure.html">Legal Disclosure</a>
-      </span>
-    </footer>
+    <div class="window">
+      <div class="window__header">
+        <div class="header__dots">
+          <div class="header__dot header__dot--red"></div>
+          <div class="header__dot header__dot--yellow"></div>
+          <div class="header__dot header__dot--green"></div>
+        </div>
+      </div>
+      <div class="window__body">
+          <p class="input-line"></p>
+          <p class="cursor">|</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
