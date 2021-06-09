@@ -1,0 +1,67 @@
+body {
+  background-color: $color-white-background;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.6rem;
+}
+.window {
+  position: absolute;
+  width: 50vw;
+  height: 60vh;
+  border-radius: 5px;
+  background-color: $color-window-background;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    width: 100%;
+    height: 5rem;
+    border-radius: 5px 5px 0 0;
+    background-color: $color-window-header;
+  }
+  &__body {
+    flex: 1;
+    padding: 5rem;
+    text-align: justify;
+    max-height: 100%;
+    overflow: auto;
+  }
+}
+
+.header {
+  &__dots {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &__dot {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+
+    &--red {
+      background-color: $color-header-dot-red;
+    }
+    &--yellow {
+      background-color: $color-header-dot-yellow;
+    }
+    &--green {
+      background-color: $color-header-dot-green;
+    }
+  }
+}
+
+.input-line {
+  display: inline;
+}
+.cursor {
+  display: inline;
+}

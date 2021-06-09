@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-color: #eef2e6;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.6rem;
+}
+
+.window {
+  position: absolute;
+  width: 50vw;
+  height: 60vh;
+  border-radius: 5px;
+  background-color: #3f4045;
+  display: flex;
+  flex-direction: column;
+}
+.window__header {
+  width: 100%;
+  height: 5rem;
+  border-radius: 5px 5px 0 0;
+  background-color: #1e1e1e;
+}
+.window__body {
+  flex: 1;
+  padding: 5rem;
+  text-align: justify;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.header__dots {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header__dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+.header__dot--red {
+  background-color: #f56354;
+}
+.header__dot--yellow {
+  background-color: #fabf2f;
+}
+.header__dot--green {
+  background-color: #29cd3f;
+}
+
+.input-line {
+  display: inline;
+}
+
+.cursor {
+  display: inline;
+}
+
+/*# sourceMappingURL=style.css.map */
