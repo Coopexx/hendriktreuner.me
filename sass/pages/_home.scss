@@ -17,6 +17,7 @@ body {
   background-color: $color-window-background;
   display: flex;
   flex-direction: column;
+  outline: none;
 
   &__header {
     width: 100%;

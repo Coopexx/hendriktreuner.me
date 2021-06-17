@@ -57,6 +57,7 @@ body {
   background-color: #3f4045;
   display: flex;
   flex-direction: column;
+  outline: none;
 }
 .window__header {
   width: 100%;
