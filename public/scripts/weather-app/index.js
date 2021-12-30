@@ -1,23 +1,8 @@
 const setDailyForecast = (daily, i) => {
-    let selectedIcon;
-
-    const iconCloud = 'images/weather-app/sprite.svg#icon-cloud';
-    const iconSnow = 'images/weather-app/sprite.svg#icon-cloud-snow';
-    const iconRain = 'images/weather-app/sprite.svg#icon-cloud-rain';
-
-    switch (daily.weather) {
-        case 'Clouds':
-            selectedIcon = iconCloud;
-            break;
-        case 'Snow':
-            selectedIcon = iconSnow;
-            break;
-        case 'Rain':
-            selectedIcon = iconRain;
-    }
+    const url = 'https://openweathermap.org/img/wn/' + daily.icon + '.png';
 
     document.querySelector(`.day${i}`).innerHTML = daily.day;
-    document.querySelector(`.weather${i}`).setAttribute('href', selectedIcon);
+    document.querySelector(`.weather${i}`).src = url;
     document.querySelector(`.temp${i}__max`).innerHTML = daily.tempMax;
     document.querySelector(`.temp${i}__min`).innerHTML = daily.tempMin;
 };
@@ -73,11 +58,12 @@ const getDailyForecast = (dataObj) => {
 
         arr[i] = {
             day: day.substring(0, 2).toUpperCase(),
-            weather: dataObj[i].weather[0].main,
+            icon: dataObj[i].weather[0].icon,
             tempMin: Math.round(dataObj[i].temp.min) + '°',
             tempMax: Math.round(dataObj[i].temp.max) + '°',
         };
     }
+    arr[0].weather = dataObj[0].weather[0].description;
     return arr;
 };
 
@@ -142,9 +128,37 @@ async function parseData() {
     const pos = await getPosition();
     const url = await createURL(pos);
     const weatherData = await fetchData(url);
-    console.log(weatherData);
     const filteredData = await filterData(weatherData, pos);
     renderData(filteredData);
 }
 
 parseData();
+
+const handlePermission = () => {
+    const main = document.querySelector('main');
+    const prompt = document.querySelector('.overlay');
+    prompt.style.display = 'none';
+
+    navigator.permissions.query({ name: 'geolocation' }).then((result) => {
+        if (result.state == 'denied') {
+            prompt.style.display = 'inline';
+            main.style.display = 'none';
+        }
+        result.onchange = function () {
+            if (result.state == 'denied') {
+                prompt.style.display = 'inline';
+                main.style.display = 'none';
+            }
+            if (result.state == 'granted') {
+                prompt.style.display = 'none';
+                main.style.display = 'flex';
+            }
+        };
+    });
+};
+
+function report(state) {
+    console.log('Permission ' + state);
+}
+
+handlePermission();

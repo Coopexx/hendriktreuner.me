@@ -1,6 +1,5 @@
 const renderGraph = (dataObj) => {
     dataObj.hourly.length = 16;
-    console.log(dataObj);
 
     const labels = [];
     const data = [];
