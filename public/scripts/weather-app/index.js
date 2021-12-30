@@ -1,9 +1,9 @@
 const setDailyForecast = (daily, i) => {
     let selectedIcon;
 
-    const iconCloud = 'images/sprite.svg#icon-cloud';
-    const iconSnow = 'images/sprite.svg#icon-cloud-snow';
-    const iconRain = 'images/sprite.svg#icon-cloud-rain';
+    const iconCloud = 'images/weather-app/sprite.svg#icon-cloud';
+    const iconSnow = 'images/weather-app/sprite.svg#icon-cloud-snow';
+    const iconRain = 'images/weather-app/sprite.svg#icon-cloud-rain';
 
     switch (daily.weather) {
         case 'Clouds':
