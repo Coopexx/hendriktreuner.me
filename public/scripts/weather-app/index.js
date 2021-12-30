@@ -5,9 +5,23 @@ const setDailyForecast = (daily, i) => {
     document.querySelector(`.weather${i}`).src = url;
     document.querySelector(`.temp${i}__max`).innerHTML = daily.tempMax;
     document.querySelector(`.temp${i}__min`).innerHTML = daily.tempMin;
+
+    if (document.body.clientWidth < 500) {
+        document.querySelector(`.weather${i}`).style.width = '40px';
+    }
+    if (document.body.clientWidth < 400) {
+        document.querySelector(`.weather${i}`).style.width = '30px';
+    }
+    if (document.body.clientWidth < 300) {
+        document.querySelector(`.weather${i}`).style.width = '20px';
+    }
 };
 
 const renderData = (dataObj) => {
+    if (dataObj.date.minute < 10) {
+        console.log('runs');
+        dataObj.date.minute = '0' + dataObj.date.minute;
+    }
     //Overview
     document.querySelector('.overview__day').innerHTML = dataObj.date.day;
     document.querySelector('.overview__time').innerHTML =

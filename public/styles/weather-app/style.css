@@ -15,13 +15,26 @@ body {
     align-items: center;
 }
 @media only screen and (min-width: 1024px) {
-    body {
+    main {
         font-size: 1.5vw;
     }
 }
-@media only screen and (min-width: 1500px) {
-    body {
+@media only screen and (min-width: 1300px) {
+    main {
         font-size: 1vw;
+    }
+}
+@media only screen and (max-width: 768px) {
+    main {
+        font-size: 3vw;
+    }
+    .overview {
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+    }
+    .spacer {
+        display: none;
     }
 }
 
@@ -69,6 +82,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .icon {
