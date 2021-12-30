@@ -96,6 +96,10 @@ main {
     justify-content: space-evenly;
 }
 
+.colored {
+    color: orange;
+}
+
 .statistics {
     width: 100%;
     display: flex;

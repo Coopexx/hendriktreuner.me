@@ -19,7 +19,6 @@ const setDailyForecast = (daily, i) => {
 
 const renderData = (dataObj) => {
     if (dataObj.date.minute < 10) {
-        console.log('runs');
         dataObj.date.minute = '0' + dataObj.date.minute;
     }
     //Overview
