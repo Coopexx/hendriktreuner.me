@@ -25,10 +25,28 @@ const renderData = (dataObj) => {
 
 async function reverseGeocoding(pos) {
     const url =
-        'https://nominatim.openstreetmap.org/reverse?lat=53.8187279&lon=12.0702051&format=json';
+        'https://nominatim.openstreetmap.org/reverse?lat=' +
+        pos.lat +
+        '&lon=' +
+        pos.lon +
+        '&format=json';
 
     const data = await fetchData(url);
-    return data.address.city;
+    if (data.address.hasOwnProperty('hamlet')) {
+        return data.address.hamlet;
+    } else if (data.address.hasOwnProperty('village')) {
+        return data.address.village;
+    } else if (data.address.hasOwnProperty('city')) {
+        return data.address.city;
+    } else if (data.address.hasOwnProperty('municipality')) {
+        return data.address.municipality;
+    } else if (data.address.hasOwnProperty('county')) {
+        return data.address.county;
+    } else if (data.address.hasOwnProperty('state')) {
+        return data.address.state;
+    } else {
+        return data.address.country;
+    }
 }
 
 const getDate = () => {
