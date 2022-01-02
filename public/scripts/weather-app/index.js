@@ -147,11 +147,17 @@ const createURL = (pos) => {
 
 const getPosition = () => {
     return new Promise(function (resolve, reject) {
-        navigator.geolocation.getCurrentPosition(function (pos) {
-            const lat = pos.coords.latitude;
-            const lon = pos.coords.longitude;
-            resolve({ lat, lon });
-        });
+        navigator.geolocation.getCurrentPosition(
+            function (pos) {
+                const lat = pos.coords.latitude;
+                const lon = pos.coords.longitude;
+                resolve({ lat, lon });
+            },
+            function (err) {
+                console.log(err);
+            },
+            { enableHighAccuracy: false }
+        );
     });
 };
 
@@ -193,3 +199,9 @@ function report(state) {
 }
 
 handlePermission();
+
+const date = new Date();
+
+setInterval(() => {
+    window.location.reload();
+}, (60 - date.getSeconds()) * 1000);

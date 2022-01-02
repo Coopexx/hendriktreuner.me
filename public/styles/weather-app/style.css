@@ -38,6 +38,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .overview {
+        height: 20%;
+    }
+}
+
 .overlay {
     display: flex;
     align-items: center;
