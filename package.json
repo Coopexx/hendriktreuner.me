@@ -1,0 +1,24 @@
+{
+  "name": "hendriktreuner.me",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./public/styles/hendriktreuner.me/sass/main.scss ./public/styles/hendriktreuner.me/css/style.css",
+    "watch:sass": "node-sass ./public/styles/hendriktreuner.me/sass/main.scss ./public/styles/hendriktreuner.me/css/style.css -w"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coopexx/hendriktreuner.me.git"
+  },
+  "author": "Hendrik Treuner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coopexx/hendriktreuner.me/issues"
+  },
+  "homepage": "https://github.com/Coopexx/hendriktreuner.me#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
