@@ -25,6 +25,15 @@ html {
     // @include respond($desk) {
     //     font-size: 56.25%; //1rem = 9px
     // }
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
 }
 
 body {

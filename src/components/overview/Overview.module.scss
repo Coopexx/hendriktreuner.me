@@ -1,7 +1,7 @@
 @import '/src/styles/variables';
 @import '/src/styles/mixins';
+
 .overview {
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -34,20 +34,9 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
+}
 
-    &__icon {
-        width: 30px;
-        // @include respond($tab-port) {
-        //     width: 45px;
-        // }
-        // @include respond($tab-land) {
-        //     width: 55px;
-        // }
-        // @include respond($desk) {
-        //     width: 65px;
-        // }
-        // @include respond($big-desk) {
-        //     width: 75px;
-        // }
-    }
+.icon__svg {
+    width: 30px;
+    height: 35px;
 }
