@@ -8,7 +8,8 @@
     flex-wrap: wrap;
     color: $color-white;
     text-align: center;
-    height: 50rem;
+    width: 80rem;
+    margin-bottom: 20rem;
 
     &__caption {
         font-size: 6rem;
@@ -17,17 +18,17 @@
     }
     &__technologies-container {
         list-style: none;
-        font-size: 3rem;
         font-weight: 900;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 20rem;
     }
     &__technology {
-        width: 20px;
+        width: 100%;
     }
     &__technology-svg {
-        height: 20px;
+        width: 40px;
+        height: 30px;
     }
     &__description {
         font-size: 4rem;
@@ -36,10 +37,7 @@
 
 .button-container {
     display: flex;
-    width: 50rem;
-    justify-content: space-between;
-}
-
-.temp {
-    background-color: transparent;
+    width: 55rem;
+    margin-top: 2rem;
+    justify-content: space-evenly;
 }

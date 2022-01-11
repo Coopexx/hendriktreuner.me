@@ -10,21 +10,14 @@
 }
 
 html {
-    font-size: 25%;
     box-sizing: border-box;
-    font-size: 25%; //1rem = 4px
-    // @include respond($phone-small) {
-    //     font-size: 37.5%; //1rem = 6px
-    // }
-    // @include respond($tab-port) {
-    //     font-size: 43.75%; //1rem = 7px
-    // }
-    // @include respond($tab-land) {
-    //     font-size: 50%; //1rem = 8px
-    // }
-    // @include respond($desk) {
-    //     font-size: 56.25%; //1rem = 9px
-    // }
+    font-size: 25%;
+    @include respond($tab-port) {
+        font-size: 35%;
+    }
+    @include respond($tab-land) {
+        font-size: 45%;
+    }
     overflow: scroll;
     overflow-x: hidden;
     scrollbar-width: none;

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./projects/weather-app/images/favicon.png">
+        <link rel="stylesheet" href="./projects/weather-app/styles/style.css" />
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="overlay">
+            <h2 class="overlay__text">To use this service, please allow this site to access your location.</h2>
+        </div>
+        <main>
+            <section class="overview">
+                <h2 class="overview__city"></h2>
+                <div class="spacer"></div>
+                <h2 class="overview__day"></h2>
+                <h2 class="overview__time"></h2>
+                <div class="spacer"></div>
+                <h2 class="overview__weather"></h2>
+            </section>
+            <section class="forecast">
+                <div class="forecast-item">
+                    <div class="day0"></div>
+                    <img class="weather0"></img>
+                    <div class="temperature">
+                        <div class="temp0__max colored"></div>
+                        <div class="temp0__min"></div>
+                    </div>
+                </div>
+                <div class="forecast-item">
+                    <div class="day1"></div>
+                    <img class="weather1"></img>
+                    <div class="temperature">
+                        <div class="temp1__max colored"></div>
+                        <div class="temp1__min"></div>
+                    </div>
+                </div>
+                <div class="forecast-item">
+                    <div class="day2"></div>
+                    <img class="weather2"></img>
+                    <div class="temperature">
+                        <div class="temp2__max colored"></div>
+                        <div class="temp2__min"></div>
+                    </div>
+                </div>
+                <div class="forecast-item">
+                    <div class="day3"></div>
+                    <img class="weather3"></img>
+                    <div class="temperature">
+                        <div class="temp3__max colored"></div>
+                        <div class="temp3__min"></div>
+                    </div>
+                </div>
+                <div class="forecast-item">
+                    <div class="day4"></div>
+                    <img class="weather4"></img>
+                    <div class="temperature">
+                        <div class="temp4__max colored"></div>
+                        <div class="temp4__min"></div>
+                    </div>
+                </div>
+                <div class="forecast-item">
+                    <div class="day5"></div>
+                    <img class="weather5"></img>
+                    <div class="temperature">
+                        <div class="temp5__max colored"></div>
+                        <div class="temp5__min"></div>
+                    </div>
+                </div>
+                <div class="forecast-item">
+                    <div class="day6"></div>
+                    <img class="weather6"></img>
+                    <div class="temperature">
+                        <div class="temp6__max colored"></div>
+                        <div class="temp6__min"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="statistics">
+                <h3 class="statistics__label">Temperature</h3>
+                <div class="statistics__wrapper">
+                    <canvas class="statistics__graph"></canvas>
+                </div>
+            </section>
+            <div class="console"></div>
+        </main>
+        <script type="text/javascript" src="./projects/weather-app/scripts/config.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script defer type="text/javascript" src="./projects/weather-app/scripts/index.js"></script>
+        <script type="text/javascript" src="./projects/weather-app/scripts/graph.js"></script>
+    </body>
+</html>

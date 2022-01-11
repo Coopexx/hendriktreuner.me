@@ -12,17 +12,17 @@ const Overview = () => {
                 Front-End Web Developer
             </h2>
             <div className={classes['icon-container']}>
-                <a href="https://github.com/Coopexx">
+                <a href="https://github.com/Coopexx" className={classes['icon__link']}>
                     <svg className={classes['icon__svg']}>
                         <use href={`${icons}#github`} />
                     </svg>
                 </a>
-                <a href="mailto:hendrik.treuner@googlemail.com">
+                <a href="mailto:hendrik.treuner@googlemail.com" className={classes['icon__link']}>
                     <svg className={classes['icon__svg']}>
                         <use href={`${icons}#email`} />
                     </svg>
                 </a>
-                <a href="https://www.linkedin.com/in/hendriktreuner">
+                <a href="https://www.linkedin.com/in/hendriktreuner" className={classes['icon__link']}>
                     <svg className={classes['icon__svg']}>
                         <use href={`${icons}#linkedin`} />
                     </svg>

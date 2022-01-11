@@ -4,9 +4,11 @@ const Button = (props) => {
     const className = classes[props.type];
 
     return (
-        <button className={`${className} ${classes['button']}`}>
-            {props.type}
-        </button>
+        <a href={props.link}>
+            <button className={`${className} ${classes['button']}`}>
+                {props.type}
+            </button>
+        </a>
     );
 };
 
