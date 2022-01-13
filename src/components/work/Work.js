@@ -7,7 +7,7 @@ const Work = () => {
         {
             name: 'Food Order App',
             description: [
-                'Friday night and nothing to eat? No worries. Order food with the convenience of a finger press',
+                'Order fresh homemade dishes easily from your sofa (Demo App)',
             ],
             technology: ['react', 'sass'],
             button: ['source', 'visit'],
@@ -29,9 +29,9 @@ const Work = () => {
         {
             name: 'Weather App',
             description: [
-                'A simple weather app that displays the current weather and a weekly forecast',
+                `A simple weather app that won't leave you in the rain`,
             ],
-            technology: ['html', 'react', 'css'],
+            technology: ['html', 'javascript', 'css'],
             button: ['source', 'visit'],
             link: [
                 'https://github.com/Coopexx/weather-app',
@@ -41,7 +41,7 @@ const Work = () => {
         {
             name: 'Portfolio Manager',
             description: [
-                'Track your expenses and assets easily and get an overview by visualizing your data',
+                'Track your expenses and assets easily and visualize your data. (Under Construction)',
             ],
             technology: ['react', 'sass'],
             button: ['source', 'visit'],
