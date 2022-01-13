@@ -7,7 +7,7 @@ const Work = () => {
         {
             name: 'Food Order App',
             description: [
-                'Order fresh homemade dishes easily from your sofa (Demo App)',
+                'Order fresh home-made dishes easily from your sofa (Demo App)',
             ],
             technology: ['react', 'sass'],
             button: ['source', 'visit'],
@@ -41,7 +41,7 @@ const Work = () => {
         {
             name: 'Portfolio Manager',
             description: [
-                'Track your expenses and assets easily and visualize your data. (Under Construction)',
+                'Track and visualize your assets easily (Under Construction)',
             ],
             technology: ['react', 'sass'],
             button: ['source', 'visit'],
