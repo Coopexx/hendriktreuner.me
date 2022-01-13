@@ -5,17 +5,27 @@ import { v4 as uuid } from 'uuid';
 const Work = () => {
     const projects = [
         {
-            name: 'Portfolio Manager',
+            name: 'Food Order App',
             description: [
-                'Track your expenses and assets easily and get an overview by visualizing your data',
+                'Friday night and nothing to eat? No worries. Order food with the convenience of a finger press',
             ],
             technology: ['react', 'sass'],
             button: ['source', 'visit'],
             link: [
-                'https://github.com/Coopexx/portfolio-manager',
-                'https://hendriktreuner.me/portfolio-manager',
+                'https://github.com/Coopexx/food-order-app',
+                'https://hendriktreuner.me/food-order-app',
             ],
         },
+        {
+            name: 'Personal Website',
+            description: [
+                'Curious about how I build this website? Find the source files here',
+            ],
+            technology: ['react', 'sass'],
+            button: ['source'],
+            link: ['https://github.com/Coopexx/hendriktreuner.me'],
+        },
+
         {
             name: 'Weather App',
             description: [
@@ -29,25 +39,16 @@ const Work = () => {
             ],
         },
         {
-            name: 'Food Order App',
+            name: 'Portfolio Manager',
             description: [
-                'Friday night and nothing to eat? No worries. Order food with the convenience of a finger press',
+                'Track your expenses and assets easily and get an overview by visualizing your data',
             ],
             technology: ['react', 'sass'],
             button: ['source', 'visit'],
             link: [
-                'https://github.com/Coopexx/food-order-app',
-                'https://hendriktreuner.me/food-order-app',
+                'https://github.com/Coopexx/portfolio-manager',
+                'https://hendriktreuner.me/portfolio-manager',
             ],
-        },
-        {
-            name: 'Personal website',
-            description: [
-                'Curious about how I build this website? Find the source files here',
-            ],
-            technology: ['react', 'sass'],
-            button: ['source'],
-            link: ['https://github.com/Coopexx/hendriktreuner.me'],
         },
     ];
 

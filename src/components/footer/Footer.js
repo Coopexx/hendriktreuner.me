@@ -4,10 +4,10 @@ const Footer = () => {
     return (
         <div className={classes.footer}>
             <div className={classes['footer__container']}>
-                <p className={classes['footer__text']}>
+                <div className={classes['footer__text']}>
                     <p className={classes['footer__copyright']}>©</p> 2022 by
                     Hendrik Treuner
-                </p>
+                </div>
                 <a
                     href="https://hendriktreuner.me/legal"
                     className={classes['footer__link']}
