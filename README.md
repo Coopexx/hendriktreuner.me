@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <img src="./banner.png" width="546" alt="Banner" />
-    <h3>Website & Portfolio</h3>
+    <h3>hendriktreuner.me</h3>
   <p>
    <img src="https://img.shields.io/github/license/Coopexx/food-order-app" alt="License Batch" />
   </p>
