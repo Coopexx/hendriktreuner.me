@@ -22,7 +22,7 @@ Navigate via the landing page to the all the custom projects
 Current project list:
 
 1. Food Order App
-2. Personal Website [This](https://hendriktreuner.me/)
+2. Personal Website ([This](https://hendriktreuner.me/))
 3. Weather App
 4. Portfolio Manager
 
