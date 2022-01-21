@@ -5,27 +5,17 @@ import { v4 as uuid } from 'uuid';
 const Work = () => {
     const projects = [
         {
-            name: 'Food Order App',
+            name: 'Foody',
             description: [
                 'Order fresh home-made dishes easily from your sofa (Demo App)',
             ],
             technology: ['react', 'sass'],
             button: ['source', 'visit'],
             link: [
-                'https://github.com/Coopexx/food-order-app',
-                'https://hendriktreuner.me/food-order-app',
+                'https://github.com/Coopexx/foody',
+                'https://hendriktreuner.me/foody',
             ],
         },
-        {
-            name: 'Personal Website',
-            description: [
-                'Curious about how I build this website? Find the source files here',
-            ],
-            technology: ['react', 'sass'],
-            button: ['source'],
-            link: ['https://github.com/Coopexx/hendriktreuner.me'],
-        },
-
         {
             name: 'Weather App',
             description: [
@@ -39,16 +29,13 @@ const Work = () => {
             ],
         },
         {
-            name: 'Portfolio Manager',
+            name: 'Personal Website',
             description: [
-                'Track and visualize your assets easily (Under Construction)',
+                'Curious about how I build this website? Find the source files here',
             ],
             technology: ['react', 'sass'],
-            button: ['source', 'visit'],
-            link: [
-                'https://github.com/Coopexx/portfolio-manager',
-                'https://hendriktreuner.me/portfolio-manager',
-            ],
+            button: ['source'],
+            link: ['https://github.com/Coopexx/hendriktreuner.me'],
         },
     ];
 
